@@ -6,8 +6,9 @@ const sock = udp.createSocket("udp4", function(msg, rinfo) {
     var error, error1;
     try {
       let msgObj = osc.fromBuffer(msg);
+      console.log(msgObj);
       let data = msgObj.args;
-      console.log(data);
+      return console.log(data);
     } catch (error1) {
       error = error1;
       return console.log("invalid OSC packet");
