@@ -7,7 +7,7 @@ const sock = udp.createSocket("udp4", function(msg, rinfo) {
     try {
       let msgObj = osc.fromBuffer(msg);
       console.log(msgObj);
-      let data = msgObj.elements.args;
+      let data = msgObj.elements[0].args;
       return console.log(data);
     } catch (error1) {
       error = error1;
