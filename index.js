@@ -5,7 +5,9 @@ const inport = "localhost";
 const sock = udp.createSocket("udp4", function(msg, rinfo) {
     var error, error1;
     try {
-      return console.log(osc.fromBuffer(msg));
+      let msgObj = osc.fromBuffer(msg);
+      let data = msgObj.args;
+      console.log(data);
     } catch (error1) {
       error = error1;
       return console.log("invalid OSC packet");
