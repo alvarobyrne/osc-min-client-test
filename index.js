@@ -12,4 +12,4 @@ const sock = udp.createSocket("udp4", function(msg, rinfo) {
     }
   });
    
-  sock.bind(inport);
+  sock.bind(6666,inport);
