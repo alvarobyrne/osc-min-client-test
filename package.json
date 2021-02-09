@@ -1,0 +1,23 @@
+{
+  "name": "osc-min-client-test",
+  "version": "1.0.0",
+  "description": "testing osc-min for dosisWeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarobyrne/osc-min-client-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarobyrne/osc-min-client-test/issues"
+  },
+  "homepage": "https://github.com/alvarobyrne/osc-min-client-test#readme",
+  "dependencies": {
+    "osc-min": "^1.1.2"
+  }
+}
